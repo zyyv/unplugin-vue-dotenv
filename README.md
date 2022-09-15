@@ -2,16 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/unplugin-vue-dotenv?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-vue-dotenv)
 
-Starter template for [unplugin](https://github.com/unjs/unplugin).
-
-## Template Usage
-
-And do a global replace of `unplugin-vue-dotenv` with your plugin name.
-
-Then you can start developing your unplugin 🔥
-
-To test your plugin, run: `pnpm run dev`
-To release a new version, run: `pnpm run release`
+Auto generate the corresponding `.env` file.
 
 ## Install
 
@@ -24,11 +15,11 @@ npm i unplugin-vue-dotenv
 
 ```ts
 // vite.config.ts
-import Starter from 'unplugin-vue-dotenv/vite'
+import Dotenv from 'unplugin-vue-dotenv/vite'
 
 export default defineConfig({
   plugins: [
-    Starter({ /* options */ }),
+    Dotenv({ /* options */ }),
   ],
 })
 ```
@@ -115,3 +106,23 @@ build({
 ```
 
 <br></details>
+
+## Options
+```ts
+export interface Options {
+  /**
+   * Generate the corresponding `.env` file according to the mode
+   * @default [['']] // Only generate `.env` file
+   * @example [['test', true]] // Generate `.env.test` and `.env.test.local` files
+   */
+  modes?: modeOpt[]
+  /**
+   * Filepath to generate corresponding .d.ts file.
+   * Default enabled when `typescript` is installed locally.
+   * Set `false` to disable.
+   *
+   * @default './auto-import-image.d.ts'
+   */
+  dts?: string | boolean
+}
+```
