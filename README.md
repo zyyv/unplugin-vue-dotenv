@@ -6,12 +6,6 @@ Starter template for [unplugin](https://github.com/unjs/unplugin).
 
 ## Template Usage
 
-To use this template, clone it down using:
-
-```bash
-npx degit chris-zhu/unplugin-vue-dotenv my-unplugin
-```
-
 And do a global replace of `unplugin-vue-dotenv` with your plugin name.
 
 Then you can start developing your unplugin 🔥
