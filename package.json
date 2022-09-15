@@ -4,13 +4,13 @@
   "packageManager": "pnpm@7.9.0",
   "description": "Register global imports on demand for Vite and Webpack",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/unplugin-starter#readme",
+  "homepage": "https://github.com/chris-zhu/unplugin-vue-dotenv#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-starter.git"
+    "url": "git+https://github.com/chris-zhu/unplugin-vue-dotenv.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
+    "url": "https://github.com/chris-zhu/unplugin-vue-dotenv/issues"
   },
   "keywords": [
     "unplugin",
