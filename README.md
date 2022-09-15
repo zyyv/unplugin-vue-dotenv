@@ -121,7 +121,7 @@ export interface Options {
    * Default enabled when `typescript` is installed locally.
    * Set `false` to disable.
    *
-   * @default './auto-import-image.d.ts'
+   * @default './env.d.ts'
    */
   dts?: string | boolean
 }
