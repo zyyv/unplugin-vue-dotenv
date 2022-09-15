@@ -5,6 +5,9 @@ import Unplugin from '../src/vite'
 export default defineConfig({
   plugins: [
     Inspect(),
-    Unplugin(),
+    Unplugin({
+      modes: [['test', true]],
+      dts: 'src/env.d.ts',
+    }),
   ],
 })

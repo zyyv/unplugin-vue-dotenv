@@ -76,15 +76,19 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@antfu/utils": "^0.5.2",
+    "fs-extra": "^10.1.0",
     "unplugin": "^0.7.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.0.1",
     "bumpp": "^8.2.1",
     "eslint": "^8.19.0",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.11",
+    "local-pkg": "^0.4.2",
     "nodemon": "^2.0.18",
     "rimraf": "^3.0.2",
     "rollup": "^2.75.7",
